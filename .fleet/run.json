@@ -1,42 +1,66 @@
 {
-    "configurations": [
-        {
-            "type": "cargo",
-            "name": "cargo run",
-            "cargoArgs": [
-                "run"
-            ],
-            "environment": {
-                "RUST_LOG": "debug"
-            }
-        },
-        {
-            "type": "cargo",
-            "name": "cargo run release",
-            "cargoArgs": [
-                "run",
-                "--release"
-            ],
-            "environment": {
-                "RUST_LOG": "info"
-            }
-        },
-        {
-            "type": "cargo",
-            "name": "cargo build",
-            "cargoArgs": [
-                "build"
-            ],
-            "environment": {
-                "RUST_LOG": "info"
-            }
-        },
-        {
-            "type": "cargo",
-            "name": "cargo clean",
-            "cargoArgs": [
-                "clean"
-            ]
-        }
-    ]
+  "configurations": [
+    {
+      "type": "cargo",
+      "name": "cargo check",
+      "cargoArgs": [
+        "check"
+      ],
+      "environment": {
+        "RUST_LOG": "debug"
+      }
+    },
+    {
+      "type": "cargo",
+      "name": "cargo run",
+      "cargoArgs": [
+        "run"
+      ],
+      "environment": {
+        "RUST_LOG": "debug"
+      }
+    },
+    {
+      "type": "cargo",
+      "name": "cargo run release",
+      "cargoArgs": [
+        "run",
+        "--release"
+      ],
+      "environment": {
+        "RUST_LOG": "info"
+      }
+    },
+    {
+      "type": "cargo",
+      "name": "cargo build",
+      "cargoArgs": [
+        "build"
+      ],
+      "environment": {
+        "RUST_LOG": "info"
+      }
+    },
+    {
+      "type": "cargo",
+      "name": "cargo clean",
+      "cargoArgs": [
+        "clean"
+      ]
+    },
+    {
+      "type": "cargo",
+      "name": "cargo fmt",
+      "cargoArgs": [
+        "fmt"
+      ]
+    },
+    {
+      "type": "cargo",
+      "name": "cargo clippy",
+      "cargoArgs": [
+        "clippy"
+      ]
+    }
+  ]
 }
