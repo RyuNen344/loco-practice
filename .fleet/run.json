@@ -1,0 +1,42 @@
+{
+    "configurations": [
+        {
+            "type": "cargo",
+            "name": "cargo run",
+            "cargoArgs": [
+                "run"
+            ],
+            "environment": {
+                "RUST_LOG": "debug"
+            }
+        },
+        {
+            "type": "cargo",
+            "name": "cargo run release",
+            "cargoArgs": [
+                "run",
+                "--release"
+            ],
+            "environment": {
+                "RUST_LOG": "info"
+            }
+        },
+        {
+            "type": "cargo",
+            "name": "cargo build",
+            "cargoArgs": [
+                "build"
+            ],
+            "environment": {
+                "RUST_LOG": "info"
+            }
+        },
+        {
+            "type": "cargo",
+            "name": "cargo clean",
+            "cargoArgs": [
+                "clean"
+            ]
+        }
+    ]
+}
